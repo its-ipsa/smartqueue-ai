@@ -1,21 +1,12 @@
-# SmartQueue AI Model
+## Working AI in MVP
 
-This folder contains the machine learning logic used to predict waiting time in SmartQueue.
+The current MVP uses a regression-based predictive model
+implemented in JavaScript to estimate waiting time based on:
 
-## Problem
-Users face unpredictable waiting times in queues.
-
-## AI Solution
-The AI model predicts estimated waiting time based on:
-- Current queue length
+- Queue length
 - Time of day
-- Historical queue patterns
 
-## Approach (MVP)
-For the MVP, a simple predictive logic is used.
-In future versions, this will be replaced with a trained ML model using Vertex AI.
+This represents a functional AI decision engine.
+In future versions, this logic will be replaced by a trained ML
+model deployed on Vertex AI.
 
-## Tools (Planned)
-- Python
-- Vertex AI
-- Google Cloud

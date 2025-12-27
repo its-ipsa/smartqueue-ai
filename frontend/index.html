@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SmartQueue</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>SmartQueue</h1>
+    <p class="subtitle">AI-Powered Queue Intelligence</p>
+
+    <div class="card">
+      <p><strong>Location:</strong> College Canteen</p>
+      <p><strong>People in Queue:</strong> <span id="queue">12</span></p>
+      <p><strong>Estimated Wait Time:</strong> <span id="wait">24</span> mins</p>
+
+      <button onclick="suggestSlot()">Get Best Time Slot</button>
+    </div>
+
+    <p id="slot" class="slot-text"></p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

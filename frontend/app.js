@@ -1,4 +1,4 @@
 function suggestSlot() {
-  document.getElementById("slot").innerText =
-    "Recommended Arrival Time: 3:30 PM (Low Crowd)";
+  const slotText = document.getElementById("slot");
+  slotText.innerText = "Recommended Arrival Time: 3:30 PM (Low Crowd)";
 }

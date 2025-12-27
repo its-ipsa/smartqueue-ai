@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SmartQueue AI MVP</title>
+</head>
+<body>
+  <h2>SmartQueue (AI Powered)</h2>
+
+  <input id="name" placeholder="Enter your name" />
+  <button onclick="joinQueue()">Join Queue</button>
+
+  <pre id="output"></pre>
+
+  <script>
+    async function joinQueue() {
+      document.getElementById("output").innerText = "Processing...";
+
+      const name = document.getElementById("name").value;
+
+      const res = await fetch("http://localhost:5000/join", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name })
+      });
+
+      const data = await res.json();
+
+      document.getElementById("output").innerText =
+`Your Position: ${data.position}
+People Ahead: ${data.peopleAhead}
+
+AI Estimated Wait Time:
+${data.aiWaitTime}`;
+    }
+  </script>
+</body>
+</html>

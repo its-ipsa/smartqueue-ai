@@ -1,5 +1,4 @@
-alert("JS Loaded");
 function suggestSlot() {
   document.getElementById("slot").innerText =
-    "Slot suggestion is WORKING ✅";
+    "Recommended Arrival Time: 3:30 PM (Low Crowd)";
 }
